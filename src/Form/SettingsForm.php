@@ -96,7 +96,7 @@ class SettingsForm extends ConfigFormBase {
 
     $form['url'] = [
       '#type' => 'item',
-      '#title' => $this->t('URL'),
+      '#title' => 'https://scalablenetworks.com.au',
       '#markup' => $this->url(),
       '#disabled' => TRUE,
     ];
