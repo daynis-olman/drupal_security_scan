@@ -140,7 +140,7 @@ class SettingsForm extends ConfigFormBase {
    * @return \Drupal\Core\StringTranslation\TranslatableMarkup
    */
   public function helpText() {
-    return $this->t('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. ');
+    return $this->t('This module is build by Scalable Networks CyberSec Australia to allow for secure auditing, scanning and vulnerability reporting for this Drupal Website in order to achieve ACSC Compliance. Upon module installation, a secure-token is created and can be accessed above. This token needs to be registered via Scalable Network Portal https://portal.scalablenetworks.com.au to ensure our vulnerability scanners can securely access your site. For any questions about this module, please email support@scalablenetworks.com.au or visit our website https://scalablenetworks.com.au. ');
   }
 
   /**
