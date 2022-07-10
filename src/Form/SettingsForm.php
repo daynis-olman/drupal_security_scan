@@ -75,7 +75,7 @@ class SettingsForm extends ConfigFormBase {
 
     $form['token'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('Token'),
+      '#title' => $this->t('Secret token'),
       '#default_value' => $config->get('token'),
       '#disabled' => TRUE,
     ];
@@ -96,8 +96,8 @@ class SettingsForm extends ConfigFormBase {
 
     $form['url'] = [
       '#type' => 'item',
-      '#title' => 'https://scalablenetworks.com.au',
-      '#markup' => $this->url(),
+      '#title' => 'Please register this token on the Scalable Networks Portal to start vulnerability auditing & reporting',
+      '#markup' => '<a target="_blank" href="https://portal.scalablenetworks.com.au">https://portal.scalablenetworks.com.au</a>',
       '#disabled' => TRUE,
     ];
 
@@ -140,7 +140,7 @@ class SettingsForm extends ConfigFormBase {
    * @return \Drupal\Core\StringTranslation\TranslatableMarkup
    */
   public function helpText() {
-    return $this->t('This module is build by Scalable Networks CyberSec Australia to allow for secure auditing, scanning and vulnerability reporting for this Drupal Website in order to achieve ACSC Compliance. Upon module installation, a secure-token is created and can be accessed above. This token needs to be registered via Scalable Network Portal https://portal.scalablenetworks.com.au to ensure our vulnerability scanners can securely access your site. For any questions about this module, please email support@scalablenetworks.com.au or visit our website https://scalablenetworks.com.au. ');
+    return $this->t('This module is build by <a target="_blank" href="https://scalablenetworks.com.au">Scalable Networks CyberSec Australia</a> to allow for secure auditing, scanning and vulnerability reporting for this Drupal Website in order to help with achieving Australian Cyber Security Centre <a target="_blank" href="https://www.cyber.gov.au/"> (ACSC)</a> vulnerability management and reporting requirements. Upon module activation, a secure-token is created and can be accessed above. This token needs to be registered via <a target="_blank" href="https://portal.scalablenetworks.com.au">Scalable Networks Portal</a> so that our vulnerability scanners can securely access your site. For any questions about this module, please email support@scalablenetworks.com.au or <a target="_blank" href="https://scalablenetworks.com.au">visit our website</a>');
   }
 
   /**
