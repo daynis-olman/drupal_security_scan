@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the scalable_cybersec module.
+ */
+
+use Drupal\Component\Utility\Crypt;
+
+/**
+ * Implements hook_install().
+ */
+function scalable_cybersec_install() {
+  Drupal::configFactory()->getEditable('scalable_cybersec.settings')
+    ->set('token', Crypt::randomBytesBase64())
+    ->save();
+}

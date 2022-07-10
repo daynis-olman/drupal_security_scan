@@ -1,0 +1,35 @@
+scalable_cybersec.settings_form:
+  path: '/admin/config/system/scalable-cybersec'
+  defaults:
+    _title: 'Scalable Networks Vulnerability Scanner settings'
+    _form: 'Drupal\scalable_cybersec\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+composer.json:
+  path: '/composer.json/{token}'
+  defaults:
+    _controller: '\Drupal\scalable_cybersec\Controller\ScalableCybersecController::composer'
+    _title: 'Composer.json'
+  options:
+    parameters:
+      token:
+        type: scalable_cybersec_token
+      no_cache: TRUE
+  requirements:
+    _access: 'TRUE'
+    _format: 'json'
+
+composer.lock:
+  path: '/composer.lock/{token}'
+  defaults:
+    _controller: '\Drupal\scalable_cybersec\Controller\ScalableCybersecController::composerLock'
+    _title: 'Composer.lock'
+  options:
+    parameters:
+      token:
+        type: scalable_cybersec_token
+      no_cache: TRUE
+  requirements:
+    _access: 'TRUE'
+    _format: 'json'

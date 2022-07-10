@@ -1,0 +1,6 @@
+services:
+  scalable_cybersec.foo_param_converter:
+    class: Drupal\scalable_cybersec\ParamConverter\ScalableCybersecTokenParamConverter
+    arguments: [ '@config.factory' ]
+    tags:
+      - { name: paramconverter }

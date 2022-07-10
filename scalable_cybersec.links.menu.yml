@@ -1,0 +1,6 @@
+scalable_cybersec.settings_form:
+  title: 'Scalable Networks Vulnerability Scanner'
+  description: 'Configure Scalable Networks Vulnerability Scanner.'
+  parent: system.admin_config_system
+  route_name: scalable_cybersec.settings_form
+  weight: 10

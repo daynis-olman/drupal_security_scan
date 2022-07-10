@@ -1,0 +1,7 @@
+scalable_cybersec.form:
+  version: 1.x
+  js:
+    js/scalable-cybersec-form.js: { }
+  dependencies:
+    - core/jquery
+    - core/jquery.once

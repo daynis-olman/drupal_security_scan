@@ -1,0 +1,5 @@
+name: Scalable Networks Vulnerability Scanner
+type: module
+description:  Allows for secure Drupal Ecosystem vulnerability scanning, auditing & reporting.
+package: Custom
+core_version_requirement: ^8 || ^9
