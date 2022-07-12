@@ -1,5 +1,5 @@
 # Drupal Vulnerability Scanning Module</br>
-Provides capability for Scalable Networks Drupal vulnerability management software to securely access your Drupal 8 or Drupal 9 website and read the versions of the installed packages and modules for security and vuner4ability management purposes</b4>
+Provides capability for Scalable Networks Drupal vulnerability management software to securely access your Drupal 8 or Drupal 9 website and read the versions of the installed packages and modules for security and vunerability management purposes</br></br>
 <img src="images/logo.png"></br>
 Scalable Networks CyberSec Australia</br>
 https://scalablenetworks.com.au
