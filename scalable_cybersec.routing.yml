@@ -33,3 +33,31 @@ composer.lock:
   requirements:
     _access: 'TRUE'
     _format: 'json'
+
+update.critical:
+  path: '/updates/critical/{token}'
+  defaults:
+    _controller: '\Drupal\scalable_cybersec\Controller\ScalableCybersecController::criticalUpdates'
+    _title: 'Available Security updates'
+  options:
+    parameters:
+      token:
+        type: scalable_cybersec_token
+      no_cache: TRUE
+  requirements:
+    _access: 'TRUE'
+    _format: 'json'
+
+update.non_critical:
+  path: '/updates/non-critical/{token}'
+  defaults:
+    _controller: '\Drupal\scalable_cybersec\Controller\ScalableCybersecController::nonCriticalUpdates'
+    _title: 'Available updates'
+  options:
+    parameters:
+      token:
+        type: scalable_cybersec_token
+      no_cache: TRUE
+  requirements:
+    _access: 'TRUE'
+    _format: 'json'
